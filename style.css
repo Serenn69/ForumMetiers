@@ -1,0 +1,962 @@
+/* Réglages de base de la page */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif, serif;
+}
+
+body {
+    margin: 0;
+    background-color: #4F7CAC;
+    width: 100%;
+    height: 100vh;
+    color: #f7f7ea;
+}
+
+/* Réglages du logo */
+
+#logo {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    margin-left: 10vw;
+    z-index: 1;
+}
+
+/* Positionnement du header */
+
+header {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #1B264F;
+    z-index: 0;
+    font-size: 1.4em;
+}
+
+/* Mise en forme header autres pages */
+
+.header-pages {
+    text-align: center;
+    padding: 3em;
+    font-size: 5em;
+    text-shadow: #1B264F 2px 2px 2px;
+    background-image: url("assets/image_background_flou.jpg");
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Barre de navigation */
+
+nav {
+    margin-left: 25vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 1em;
+}
+
+nav li {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+nav li img {
+    height: 40px;
+    padding-bottom: 5px;
+}
+
+.facebook {
+    margin-left: -30px;
+    margin-right: -50px;
+}
+
+.twitter {
+    margin-left: -20px;
+}
+
+/* Liens dans la barre de navigation */
+
+nav a {
+    text-decoration: none;
+    color: #f7f7ea;
+}
+
+nav a:hover {
+    color: #FAC748;
+}
+
+/* Forme de la barre de recherche */
+
+input[name="search"] {
+    height: 28px;
+    width: 150px;
+    border: 1px solid #1B264F;
+    border-radius: 9px;
+}
+
+/* Se connecter */
+
+header .se-connecter {
+    text-decoration: none;
+    color: #f7f7ea;
+}
+
+header .se-connecter:hover {
+    color: #FAC748;
+}
+
+/* Page Accueil */
+
+/* Bannière */
+
+.banner {
+    background-image: url("assets/banner.jpg");
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner img {
+    margin-top: 7vh;
+    width: 99.1vw;
+    height: auto;
+}
+
+/* Titre h1 */
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: #1B264F 2px 2px 2px;
+}
+
+.h1-accueil {
+    border: 3px solid #1B264F;
+    box-shadow: #1B264F 2px 1px 1px;
+    margin-bottom: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+/* Article présentation */
+
+.presentation {
+    padding: 1vw;
+}
+
+.presentation h2 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.presentation p, .presentation ul {
+    text-align: justify;
+    font-size: 1.2em;
+    margin: 0 3vw 0 3vw;
+    list-style-position: inside;
+}
+
+/* Ligne de séparation */
+
+hr {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    width: 40%;
+    border-color: #1B264F;
+    margin-left: 30%;
+}
+
+/* Article programme */
+
+.programme {
+    padding: 0 1vw 0 1vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.programme div {
+    padding: 2vw 4vw 2vw 4vw;
+}
+
+.programme img {
+    box-shadow: #1B264F -3px 3px 8px;
+    border: 1px solid #1B264F;
+}
+
+.programme h2 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.programme p, .programme ul {
+    text-align: justify;
+    font-size: 1.2em;
+    list-style-position: inside;
+}
+
+/* Article plan forum */
+
+.plan-forum {
+    margin-top: 5vh;
+    padding: 2vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.plan-forum img {
+    box-shadow: #1B264F 4px 3px 8px;
+    border: 1px solid #1B264F;
+}
+
+.plan-forum h2 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.plan-forum p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+/* Article localisation */
+
+.localisation {
+    margin-top: 5vh;
+    padding: 2vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.localisation iframe {
+    box-shadow: #1B264F -4px 3px 8px;
+    border: 1px solid #1B264F;
+}
+
+.localisation h2 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 4vh;
+}
+
+.localisation p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.localisation div {
+    padding: 0 1vw 1vw 1vw;
+}
+
+/* Page Orientation */
+
+/* Changement couleur de fond */
+
+.background-orientation {
+    background-color:  #436d96 ;
+}
+
+.background-orientation img {
+    box-shadow: #1B264F -3px 3px 8px ;
+    border: 1px solid #1B264F;
+}
+
+/* Boutons Orientation ligne 39 HTML */
+
+
+.orientation-boutons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 8vh 0 8vh 0;
+}
+
+.orientation-boutons a {
+    padding: 1.5vw;
+    margin: 0 2vw 0 2vw;
+    text-decoration: none;
+    color: #f7f7ea;
+    font-size: 1.8em;
+    box-shadow: #1B264F 4px 3px 8px;
+    border-radius: 5px;
+}
+
+.orientation-boutons a:hover {
+    color: #FAC748;
+    background-color: #1B264F;
+    transform: translate(3px, 3px);
+}
+
+/* Bouton de retour au menu */
+
+.retour-menu {
+    position: fixed;
+    bottom: 19vh;
+    right: 0.8vw;
+    padding: 1vw;
+    margin: 0 1vw 0 1vw;
+    text-decoration: none;
+    color: #f7f7ea;
+    font-size: 1.2em;
+    box-shadow: #1B264F 4px 3px 8px;
+    border-radius: 5px;
+}
+
+.retour-menu:hover {
+    color: #FAC748;
+    background-color: #1B264F;
+    transform: translate(3px, 3px);
+}
+
+/* Ancres pour le menu */
+
+#parcours, #choix, #aides {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
+/* Article parcours d'orientation ligne 47 HTML */
+
+.parcours p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.parcours h2+div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+.parcours div>div {
+    width: 40%;
+    margin: 1vw;
+}
+
+.parcours h2 {
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+.parcours a+p {
+    font-size: 0.9em;
+}
+
+.parcours figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 6vh;
+    text-align: center;
+}
+
+.parcours figure+div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 6vh;
+}
+
+.bac-techno {
+    max-width: 100%;
+}
+
+/* Article choix d'orientation ligne 109 HTML */
+
+.choix h2 {
+    margin-top: 6vh;
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+.choix p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.choix h2+div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 6vh;
+}
+
+.choix div>div {
+    width: 40%;
+    margin: 1vw;
+}
+
+.choix h2 {
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+.choix a+p {
+    font-size: 0.9em;
+}
+
+.choix figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+/* Article aides à l'orientation ligne 146 HTML */
+
+.aides h2 {
+    margin-top: 6vh;
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+.aides p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.aides h2+div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 6vh;
+}
+
+.aides div>div {
+    width: 40%;
+    margin: 1vw;
+}
+
+.letudiant {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    margin-bottom: 6vh;
+}
+
+.img-letudiant {
+    max-width: 100%;
+    padding-left: 5vw;
+}
+
+/* Page Métiers */
+
+.background-metiers { /* Couleur de fond de la page */
+    background-color: #385a7c;
+}
+
+#metiers-header, #defense, #industrie,
+#batiment, #transport, #commerce, #sante,
+#hotellerie, #arts, #communication, #environnement,
+#metiers-header { /* Alignement des ancres de chaque article à cause de la nav */
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
+/* Vignettes des domaines de métiers */
+
+.metiers-vignettes a { /* Liens */
+    box-shadow: #1B264F 4px 3px 8px;
+    border: 1px solid #1B264F;
+    margin-top: 10px;
+    padding-left: 16em;
+    padding-top: 8em;
+    background-size: 100%;
+}
+
+.metiers-vignettes a:hover { /* Hover des liens */
+    filter: brightness(1.70);
+    transform: translate(3px, 3px);
+}
+
+.metiers-vignettes { /* Responsivité */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* Image de fond des vignettes */
+
+.metiers-defense {
+    background-image: url("assets/defense-icon.jpg");
+}
+
+.metiers-industrie {
+    background-image: url("assets/industrie-icon.jpg");
+}
+
+.metiers-batiment {
+    background-image: url("assets/batiment-icon.jpg");
+}
+
+.metiers-transport {
+    background-image: url("assets/transport-icon.jpg");
+}
+
+.metiers-commerce {
+    background-image: url("assets/commerce-icon.jpg");
+}
+
+.metiers-sante {
+    background-image: url("assets/sante-icon.jpg");
+}
+
+.metiers-hotellerie {
+    background-image: url("assets/hotellerie-icon.jpg");
+}
+
+.metiers-arts {
+    background-image: url("assets/arts-icon.jpg");
+}
+
+.metiers-communication {
+    background-image: url("assets/communication-icon.jpg");
+}
+
+.metiers-environnement {
+    background-image: url("assets/environnement-icon.jpg");
+}
+
+/* Articles des domaines de métiers */
+
+.metiers-articles article { /* Alignement des blocs */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+.metiers-articles img { /* Image de l'article */
+    box-shadow: #1B264F 4px 3px 8px;
+    border: 1px solid #1B264F;
+    object-fit: cover;
+    width: 18%;
+    margin-bottom: 10px;
+}
+
+.metiers-articles p { /* Texte de l'article */
+    width: 78%;
+    padding: 10px;
+    text-align: justify;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.metiers-articles span { /* Titre(s) de l'article */
+    color: #FAC748;
+    text-decoration: underline;
+    padding-left: 2%;
+    font-size: 1.5em;
+}
+
+.metiers-articles a {
+    float: right;
+    text-decoration: none;
+    color: #1B264F;
+}
+
+.metiers-articles a:hover {
+    color: #FAC748;
+}
+
+/* Vidéos des articles des domaines de métiers */
+
+.metiers-videos { /* Centrage de la vidéo */
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.metiers-articles video { /* Espacement des vidéos */
+    margin-left: 50px;
+    text-align: center;
+}
+
+.metiers-articles a { /* Liens de retour en haut */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Fin page Métiers */
+
+/* Page jobs/stages */
+
+.background-jobs {
+    background-color: #304d6b;
+}
+
+.jobs { /*CSS du chaque bloc annonce*/
+    border: solid #040328 1px;
+    border-radius: 20px;
+    text-align: justify;
+    width: auto;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #1B264F;
+    margin-top: 30px;
+    height: 200px;
+    overflow: auto;
+}
+
+.jobs h3, .jobs p, .jobs a {
+    padding: 2px;
+}
+
+.jobs a {
+    float: right;
+    color: white;
+}
+
+                                                /* fin page jobs/stages */
+
+                                                    /* Page Exposants */
+
+.background-exposants { /* Couleur de fond de la page */
+    background-color: #28425b;
+}
+
+/* Recherche alphabétique */
+
+.exposants-lettres h3 { /* Titre */
+    text-align: center;
+    color: #FAC748;
+    text-shadow: #1B264F 0.1em 0.1em 0.2em;
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+.exposants-lettres div { /* 2 lignes de lettres */
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.exposants-lettres li { /* CSS des lettres */
+    display: inline-block;
+    box-shadow: #1B264F 4px 3px 8px;
+    border-radius: 5px;
+    font-size: 3em;
+    margin-left: 1.5%;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: -20px;
+}
+
+.exposants-lettres li:hover { /* Hover des cellules des lettres */
+    transform: translate(3px, 3px);
+    background-color: #1B264F;
+}
+
+.exposants-lettres ul { /* Listes de lettres */
+    text-align: center;
+    margin-top: 100px;
+}
+
+.exposants-lettres a { /* Lien des lettres */
+    text-decoration: none;
+    color: white;
+}
+
+.exposants-lettres a:hover { /* Hover des lien des lettres */
+    color: #FAC748;
+}
+
+/* Carte des stands */
+
+.exposants-carte { /* Centrage de la div de la carte */
+    text-align: center;
+}
+
+.exposants-carte img { /* Taille de la carte */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.exposants-carte img:hover { /* Taille et déplacement de la carte lors du hover */
+    width: 200%;
+    transform: translate(-25%, 0);
+}
+
+/* Liste des exposants par ordre alphabétique */
+
+.exposants-ordre-alpha { /* Centrage de la section globale */
+    text-align: center;
+}
+
+.exposants-ordre-alpha h3 { /* Titre de chaque initiale */
+    text-align: left;
+    width: 90%;
+    background-color: white;
+    color: #1B264F;
+    padding-left: 5%;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.exposants-ordre-alpha div { /* Mise en 3 colonnes */
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    margin: 5px;
+}
+
+.exposants-ordre-alpha li { /* Couleur de la liste */
+    color: #FAC748;
+    list-style-position: inside;
+    padding-top: 5px;
+    text-align: left;
+}
+
+#exposants-\#ab, #exposants-cde, #exposants-fgh,
+#exposants-ijk, #exposants-lmn, #exposants-opq,
+#exposants-rst, #exposants-uvw, #exposants-xyz,
+#exposants-header { /* Alignement des ancres de chaque initiale à cause de la nav */
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
+/* Formulaire de contact des exposants */
+
+#exposants-form { /* Centrage de la section globale */
+    text-align: center;
+}
+
+#exposants-form div, #exposants-form table { /* Mise en 2 colonnes */
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#exposants-form .left { /* Alignement à gauche des titres des champs */
+    text-align: left;
+}
+
+#exposants-form .right { /* Alignement à droite des champs */
+    text-align: right;
+}
+
+#exposants-form span { /* Astérisque des champs requis */
+    color: red;
+}
+
+#exposants-form input[type="text"], #exposants-form input[type="tel"],
+#exposants-form input[type="email"], #exposants-form select,
+#exposants-form input[type="submit"] { /* Taille des champs & du bouton */
+    width: 220px;
+    height: 30px;
+}
+
+#exposants-form input[type="submit"] { /* Positionnement du bouton */
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.exposants-contatcs {
+    margin-bottom: -1vw;
+}
+
+                                            /* Fin page Exposants */
+
+/*debut CSS page Contact*/
+
+.background-contact {
+    background-color: #1c3349;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.contact-h1 { /*CSS titre h1 du page Contact*/
+    margin-top: 200px;
+    text-align: center;
+    padding: 3em;
+    font-size: 5em;
+    text-shadow: #1B264F 2px 2px 2px;
+    background-image: url("assets/image_background_flou.jpg");
+}
+
+
+.contact-detail { /*CSS du bloc détails organisateur*/
+    border: solid #040328 1px;
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+    padding: 10px;
+    background-color: #1B264F;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 15%;
+}
+
+.carte {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 20%;
+}
+
+/* CSS du formulaire*/
+
+.contact-formulaire-titre {
+    font-size: 2em;
+}
+
+.contact-form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 5%;
+}
+
+#contact {
+    background: #1B264F;
+    padding: 25px;
+    margin: 60px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.contact-form fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.contact-infos div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    background: #FFFFFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAAAAA;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4F7CAC;
+    color: #FFFFFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #FAC748;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/*fin CSS formulaire*/
+
+/*fin CSS page Contact*/
+
+/* Footer */
+
+footer {
+    background-color: #1B264F;
+    height: auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 1.2vh;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #f7f7ea;
+}
+
+footer ul a:hover {
+    color: #FAC748;
+}
+
+.footer-liens {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.rgpd {
+    margin: 1vw 0 1vw 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.rgpd li {
+    margin: 0 2vw 0 2vw;
+    font-size: 0.65em;
+}
